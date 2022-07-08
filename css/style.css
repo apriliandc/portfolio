@@ -100,7 +100,7 @@ button:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 14px;
   width: 959px;
 }
 
@@ -291,16 +291,13 @@ p {
 }
 
 .footer {
+  flex-wrap: nowrap;
   display: flex;
-  max-width: fit-content;
-  flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   padding: 14px;
   margin-top: 14em;
-  gap: 200px;
+  
 }
-
-
 
 .text h1 {
   max-width: fit-content;
@@ -371,6 +368,10 @@ p {
   text-decoration: none;
 }
 
+.side-footer a {
+  text-decoration: none;
+}
+
 
 .footbar {
   margin-top: 2.5em;
@@ -394,9 +395,8 @@ p {
   text-align: center;
   text-decoration: none;
 }
-.side-footer a {
-  text-decoration: none;
-}
+
+
 .footbar a:hover {
   transform: none;
   color: #5D5FEF;
@@ -408,10 +408,10 @@ p {
 
 @media screen and (max-width: 700px) {
   .logo { 
-    position:fixed;
-    color:#5D5FEF;
-}
+    margin: 0;
+  }
   .nav {
+    width: 672px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -419,7 +419,7 @@ p {
     align-items: flex-start;
   }
   .navbar {
-    margin-top: 16em;
+    margin-top: 1em;
     display: none;
     display: flex;
     flex-direction: column;
@@ -439,28 +439,36 @@ p {
     }
     .card {
       margin-top: 1.5em;
-      /* max-width: fit-content; */
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     .cards {
       margin-top: 1.5em;
-      /* max-width: fit-content; */
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
+    /* .container {
+      background: #140E0E;
+    } */
+    /* .content {
+      background: #5D5FEF;
+      padding: 14px;
+    } */
+
+    .spasi {
+      position: relative;
+      left: 2rem;
+    }
+
     .footer {
+      /* background: #AEAFF7; */
       display: flex;
-      max-width: fit-content;
       flex-direction: column;
       align-items: flex-start;
       padding: 14px;
-      margin-top: 14em;
-      gap: 100px;
-      /* width: 959px;
-      height: 389px; */
+      margin-top: 2em;
     }
-}
+  }
